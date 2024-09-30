@@ -18,7 +18,7 @@ const Form = () => {
 
         try {
             const weatherData = await axios.post(
-                "http://localhost:5000", // Replace with your server URL
+                "https://weather-app-mern-nu.vercel.app/", // Replace with your server URL
                 payload
             );
             navigate("/weather", { state: { data: weatherData.data } });
